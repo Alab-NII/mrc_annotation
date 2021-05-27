@@ -1,5 +1,5 @@
 # mrc_annotation
-Annotation and parsers for ["Evaluation Metrics for Machine Reading Comprehension: Prerequisite Skills and Readability"](https://aclanthology.info/papers/P17-1075/p17-1075) (Sugawara et al., ACL 2017)
+Annotation and parsers for ["Evaluation Metrics for Machine Reading Comprehension: Prerequisite Skills and Readability"](https://www.aclweb.org/anthology/P17-1075/) (Sugawara et al., ACL 2017)
 
 ## Annotation data
 
@@ -20,11 +20,12 @@ In the `annotation` directory.
   - 11: Schematic clause relation
   - 12: Punctuation
   - 13: no skill
+  - 14: question is nonsense or ambiguous
 * `skill_count`
   - Number of required skills.
 * `sents_indices`
   - Indices of sentences that are required for answering a question.
-  - Each value indicates an index of list of string(context).split() in python.
+  - An index is in a list of `str(context).split()` in python.
 * `id`
   - Numbering in annotation.
 * `original_id`
